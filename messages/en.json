@@ -1,0 +1,57 @@
+{
+    "Main": {
+      "greetings" : "Hi! I'm Filipe Leoni",
+      "title": "Fullstack Developer",
+      "description": "I'm Filipe Leoni, a full-stack developer With a passion for crafting web experiences, I specialize in both front-end and back-end technologies"	
+    },
+    "Skills": {
+      "title": {
+        "my": "My",
+        "skills": "Skills"
+      }
+    },
+    "Projects": {
+      "my": "My",
+      "projects": "Projects",
+      "code": "Source Code"
+
+    },
+
+    "Experience": {
+      "title": {
+        "my": "My",
+        "experience": "Experience"
+      },
+      "SouJunior": {
+        "title": "Frontend Developer",
+        "company": "SouJunior",
+        "description":  "As a Frontend Developer at SouJunior, I'm responsible for crafting and enhancing visual interfaces for websites and web applications. My role involves utilizing a range of technologies to transform concepts into engaging user experiences, ensuring seamless navigation and impactful design implementation."
+      },
+      "InsightLab": {
+        "title": "Fullstack Developer",
+        "company": "Insight Lab",
+        "description":  "As a Fullstack Developer at Insight Lab, I had the opportunity to contribute to both frontend and backend development. I played a pivotal role in designing and implementing features for web applications, ensuring a holistic approach to user-centric solutions. This experience allowed me to seamlessly bridge the gap between frontend and backend technologies, delivering comprehensive and cohesive digital experiences."
+      }
+    },
+
+    "AboutMe": {
+      "title": {
+        "my": "My",
+        "history": "History"
+      },
+      "description": "Hello! I'm Filipe Leoni, a passionate programmer at the age of 19. Hailing from Petrolina, Pernambuco, I've been diving into the realm of technology for three years, carving a significant path in the field. Currently enrolled in Software Analysis and Development at college, I'm dedicated to further expanding my skillset to craft impactful solutions. \n\n With over a year of hands-on experience, I've had the privilege of working on stimulating projects, applying my knowledge in web development and collaborating with talented teams. When not immersed in code, I enjoy programming to the rhythm of my favorite music. \n\n In addition, my leisure time is spent engrossed in captivating anime and playing basketball with friends. My unwavering quest for knowledge is what propels me, and I'm eagerly looking forward to embracing new challenges, broadening my horizons, and continuing to evolve both as a developer and an individual."
+    },
+
+    "Contact": {
+      "title": "Contact Me",
+      "btn": "Send me a email"
+    },
+
+    "Header": {
+      "home": "Home",
+      "skills": "Skills",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  }

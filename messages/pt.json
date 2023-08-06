@@ -1,0 +1,59 @@
+{
+  "Main": {
+    "greetings" : "Olá! Me chamo Filipe Leoni",
+    "title": "Desenvolvedor Fullstack",
+    "description": "Atuo como desenvolvedor full-stack. Tenho uma verdadeira paixão por construir experiências web, e meu foco se estende tanto para as tecnologias de front-end quanto para as de back-end."	
+  },
+
+  "Skills": {
+    "title": {
+      "my": "Minhas",
+      "skills": "Habilidades"
+    }
+  },
+
+    "Projects": {
+      "my": "Meus",
+      "projects": "Projetos",
+      "code": "Código Fonte"
+    },
+
+    "Experience": {
+      "title": {
+        "my": "Minha",
+        "experience": "Experiência"
+      },
+      "SouJunior": {
+        "title": "Desenvolvedor Frontend",
+        "company": "SouJunior",
+        "description": "Como Desenvolvedor Frontend na SouJunior, sou responsável por criar e aprimorar interfaces visuais para sites e aplicações web. Minha função envolve a utilização de uma variedade de tecnologias para transformar conceitos em experiências de usuário envolventes, garantindo navegação fluida e implementação de design impactante."
+      },
+      "InsightLab": {
+        "title": "Desenvolvedor Fullstack",
+        "company": "Insight Labs",
+        "description":  "Como Desenvolvedor Fullstack no Insight Lab, tive a oportunidade de contribuir tanto para o desenvolvimento frontend quanto backend. Desempenhei um papel fundamental no design e implementação de recursos para aplicações web, garantindo uma abordagem holística para soluções centradas no usuário. Essa experiência me permitiu conectar perfeitamente as tecnologias de frontend e backend, proporcionando experiências digitais completas e coesas."
+      }
+    },
+
+    "AboutMe": {
+      "title": {
+        "my": "Minha",
+        "history": "História"
+      },
+      "description": "Olá! Sou o Filipe Leoni, um entusiasta da programação com 19 anos de idade. Originário de Petrolina, Pernambuco, mergulho no mundo da tecnologia há três anos, forjando um caminho significativo na área. Atualmente, estou na faculdade de Análise e Desenvolvimento de Software, buscando ampliar ainda mais meu repertório para criar soluções impactantes. \n \n Com mais de um ano de experiência prática, tive a oportunidade de trabalhar em projetos estimulantes, aplicando meus conhecimentos em desenvolvimento web e colaborando com equipes talentosas. Quando não estou imerso no código, gosto de programar ao som da minha música favorita. \n\n Além disso, meu tempo livre é ocupado assistindo a animes envolventes e jogando basquete com amigos. A busca incessante por conhecimento é o que me move, e estou ansioso para abraçar novos desafios, expandir meus horizontes e continuar a evoluir como desenvolvedor e indivíduo"
+    },
+
+    "Contact": {
+      "title": "Entre em contato comigo",
+      "btn": "Envie-me um email"
+    },
+
+    "Header": {
+      "home": "Início",
+      "skills": "Habilidades",
+      "experience": "Experiência",
+      "projects": "Projetos",
+      "contact": "Contato"
+    }
+}
+
