@@ -12,7 +12,7 @@ import {
 import Vscode from "@/assets/images/VSCode.svg";
 import LaptopAsset from "@/assets/images/Laptop-asset.png";
 import Mail from "@/assets/images/mail.svg";
-import At from "@/assets/images/at.svg";
+import At from "@/assets/images/At.svg";
 import { Extras } from "@/components/Extras";
 import { ProjectsCard } from "@/components/ProjectsCard";
 import { ProjectsEN } from "@/mocks/Projects/en";
