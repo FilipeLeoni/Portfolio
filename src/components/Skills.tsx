@@ -22,7 +22,7 @@ interface SkillsProps {
 
 export const Skills = ({ subtitle, title }: SkillsProps) => {
   return (
-    <section className="relative pt-36 overflow-hidden" id="skills">
+    <section className="relative pt-40 overflow-hidden" id="skills">
       <div className="flex flex-col items-center">
         <motion.h2
           initial={{ opacity: 0, y: -10 }}
