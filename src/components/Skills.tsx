@@ -28,7 +28,7 @@ export const Skills = ({ subtitle, title }: SkillsProps) => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-2xl font-semibold"
+          className="text-2xl font-semibold text-gray-400 dark:text-gray-500"
         >
           {subtitle}
         </motion.h2>

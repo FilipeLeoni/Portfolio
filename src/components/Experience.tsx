@@ -31,7 +31,9 @@ export const Experience = ({
       className="min-h-screen flex flex-col items-center pt-40"
       id="experience"
     >
-      <h2 className="text-3xl font-semibold">{subtitle}</h2>
+      <h2 className="text-3xl font-semibold text-gray-400 dark:text-gray-500">
+        {subtitle}
+      </h2>
       <h1 className="text-5xl font-semibold text-gray-700 dark:text-gray-200">
         {title}
       </h1>

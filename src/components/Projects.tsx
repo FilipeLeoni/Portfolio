@@ -16,7 +16,7 @@ export const Projects = ({ subtitle, title, code, locale }: any) => {
       <div className="w-full max-w-6xl">
         <div className="flex flex-col ">
           <motion.h2
-            className="text-3xl font-semibold"
+            className="text-3xl font-semibold text-gray-400 dark:text-gray-500"
             variants={fadeIn("left", 0.5)}
             initial={"hidden"}
             whileInView={"show"}
