@@ -2,7 +2,7 @@ import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Providers } from "./providers";
-import { useLocale } from "next-intl";
+import { NextIntlClientProvider, useLocale } from "next-intl";
 import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,13 +23,16 @@ export default function RootLayout({
   if (params.locale !== locale) {
     notFound();
   }
+
   return (
     <html lang={locale}>
       <body className={inter.className}>
         <Providers>
-          <div className="bg-gradient-to-r scroll-smooth from-[#D1E8FF] to-[#F5FAFF] dark:from-[#1E2833] dark:to-[#1C2023]">
-            {children}
-          </div>
+          <NextIntlClientProvider locale={locale}>
+            <div className="bg-gradient-to-r scroll-smooth from-[#D1E8FF] to-[#F5FAFF] dark:from-[#1E2833] dark:to-[#1C2023]">
+              {children}
+            </div>
+          </NextIntlClientProvider>
         </Providers>
       </body>
     </html>

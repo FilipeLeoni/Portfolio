@@ -2,9 +2,19 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { NextIntlClientProvider, useLocale } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
+
+interface HeaderProps {
+  home: string;
+  skills: string;
+  experience: string;
+  projects: string;
+  contact: string;
+  locale: string;
+}
 
 export const Header = ({
   home,
@@ -13,7 +23,7 @@ export const Header = ({
   projects,
   contact,
   locale,
-}: any) => {
+}: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -23,7 +33,12 @@ export const Header = ({
   const genericHamburgerLine = `h-1 w-6 my-0.5 rounded-full bg-gray-700 dark:bg-gray-200 transition ease transform duration-300`;
 
   return (
-    <div className="z-50 w-full flex dark:bg-gray-950/40 dark:text-gray-100 max-w-sm md:max-w-3xl lg:max-w-4xl dark-mode justify-between items-center px-8 mx-auto  bg-white/50 text-gray-800 backdrop-blur-lg py-2 top-4 rounded-3xl drop-shadow-sm border dark:border-gray-700 fixed left-1/2 transform -translate-x-1/2">
+    <motion.div
+      className="z-50 w-full flex dark:bg-gray-950/40 dark:text-gray-100 max-w-sm md:max-w-3xl lg:max-w-4xl dark-mode justify-between items-center px-8 mx-auto  bg-white/50 text-gray-800 backdrop-blur-lg py-2 top-4 rounded-3xl drop-shadow-sm border dark:border-gray-700 fixed left-1/2 transform -translate-x-1/2"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ type: "spring", stiffness: 100 }}
+    >
       <div className="text-lg font-medium hidden lg:inline">Filipe Leoni</div>
       <div className="hidden md:flex">
         <Link
@@ -124,6 +139,6 @@ export const Header = ({
           </ul>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };

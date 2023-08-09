@@ -6,11 +6,13 @@ import MockupDark from "@/assets/images/MockupDark.svg";
 import MockupLight from "@/assets/images/MockupLight.svg";
 import { Badges } from "./Badges";
 import { BsGithub } from "react-icons/bs";
-import { useTranslations } from "next-intl";
 
-export const ProjectsCard = ({ project }: any) => {
-  const t = useTranslations("Projects");
+interface ProjectsProps {
+  project: any;
+  tcode: string;
+}
 
+export const ProjectsCard = ({ project, tcode }: ProjectsProps) => {
   return (
     <div>
       <div className="lg:flex-row lg:text-start lg:gap-20 text-center gap-8 flex flex-col h-full justify-center items-center ">
@@ -51,7 +53,7 @@ export const ProjectsCard = ({ project }: any) => {
           </p>
           <Link href={project?.code} target="_blank">
             <div className="flex gap-2 items-center text-gray-500 hover:text-gray-700 dark:text-gray-200 dark:hover:text-white">
-              <BsGithub size={20} /> {t("code")}
+              <BsGithub size={20} /> {tcode}
             </div>
           </Link>
           <div className="flex gap-3 mt-5 flex-wrap justify-center">
