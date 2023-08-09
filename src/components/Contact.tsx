@@ -18,7 +18,7 @@ interface ContactProps {
 export const Contact = ({ title, button }: ContactProps) => {
   return (
     <section
-      className="h-full pb-44 pt-20 flex items-center gap-20 flex-col relative px-6"
+      className="h-full pb-44 pt-20 flex items-center gap-20 flex-col relative px-6 overflow-hidden "
       id="contact"
     >
       <motion.div
@@ -66,8 +66,12 @@ export const Contact = ({ title, button }: ContactProps) => {
           </a>
         </div>
       </motion.div>
-      <Image src={Mail} alt="mail" className="absolute left-32 z-10" />
-      <Image src={At} alt="mail" className="absolute bottom-36 right-32 z-10" />
+      <Image src={Mail} alt="mail" className="absolute left-32 z-10 " />
+      <Image
+        src={At}
+        alt="mail"
+        className="absolute bottom-36 right-32 z-10 md:inline hidden"
+      />
     </section>
   );
 };

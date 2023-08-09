@@ -22,14 +22,14 @@ export default function Home() {
 
   return (
     <div>
-      <Header
+      {/* <Header
         home={tHeader("home")}
         skills={tHeader("skills")}
         experience={tHeader("experience")}
         projects={tHeader("projects")}
         contact={tHeader("contact")}
         locale={locale}
-      />
+      /> */}
       <Greetings
         greetings={tHome("greetings")}
         title={tHome("title")}

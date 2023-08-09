@@ -1,10 +1,16 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import React from "react";
+import React, { useEffect } from "react";
 
 export const ThemeSwitcher = () => {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    if (!resolvedTheme) {
+      setTheme("light");
+    }
+  }, [resolvedTheme, setTheme]);
 
   const handleToggle = () => {
     setTheme(theme === "dark" ? "light" : "dark");
