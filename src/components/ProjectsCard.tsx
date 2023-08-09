@@ -13,11 +13,11 @@ export const ProjectsCard = ({ project }: any) => {
 
   return (
     <div>
-      <div className="flex ">
+      <div className="lg:flex-row lg:text-start lg:gap-20 text-center gap-8 flex flex-col h-full justify-center items-center ">
         <Link
           target="_blank"
           href={project?.preview}
-          className="w-[550px] h-64 overflow-hidden drop-shadow-xl mr-20 flex flex-col"
+          className="md:w-[550px] w-[300px] h-full lg:h-64 overflow-hidden drop-shadow-xl flex flex-col"
         >
           <Image
             src={MockupDark}
@@ -42,11 +42,11 @@ export const ProjectsCard = ({ project }: any) => {
             />
           </div>
         </Link>
-        <div className="flex-col flex gap-4">
+        <div className="flex-col flex gap-4 items-center lg:items-start">
           <h2 className="text-3xl font-medium text-gray-700 dark:text-gray-200">
             {project?.name}
           </h2>
-          <p className="text-gray-500 dark:text-gray-300 max-w-4xl">
+          <p className="text-gray-500 dark:text-gray-300 max-w-4xl w-full md:break-normal break-all">
             {project?.description}
           </p>
           <Link href={project?.code} target="_blank">
@@ -54,7 +54,7 @@ export const ProjectsCard = ({ project }: any) => {
               <BsGithub size={20} /> {t("code")}
             </div>
           </Link>
-          <div className="flex gap-3 mt-5">
+          <div className="flex gap-3 mt-5 flex-wrap justify-center">
             {project?.techs?.map((tech: any) => (
               <Badges key={tech}>{tech}</Badges>
             ))}

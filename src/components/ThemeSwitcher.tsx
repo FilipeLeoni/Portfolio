@@ -11,7 +11,7 @@ export const ThemeSwitcher = () => {
   };
 
   return (
-    <div className="flex-none">
+    <div className="md:flex-none">
       <label className="swap swap-rotate">
         <input
           type="checkbox"

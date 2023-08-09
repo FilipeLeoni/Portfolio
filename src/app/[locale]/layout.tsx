@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang={locale}>
       <body className={inter.className}>
         <Providers>
-          <div className="bg-gradient-to-r from-[#D1E8FF] to-[#F5FAFF] dark:from-[#1E2833] dark:to-[#1C2023]">
+          <div className="bg-gradient-to-r scroll-smooth from-[#D1E8FF] to-[#F5FAFF] dark:from-[#1E2833] dark:to-[#1C2023]">
             {children}
           </div>
         </Providers>
