@@ -24,6 +24,7 @@ export const SkillsCard = ({ title, skills }: SkillsCardProps) => {
               width={56}
               height={56}
               className="rounded-lg"
+              quality={10}
             />
             <p className=" font-medium  text-center">{skill.name}</p>
           </div>

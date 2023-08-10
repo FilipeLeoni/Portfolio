@@ -24,7 +24,7 @@ export const Greetings = ({
       className="h-screen relative md:px-0 px-4 -mb-40 flex  justify-center items-center"
       id="home"
     >
-      <div className="flex justify-center pt-10 items-center flex-col text-center ">
+      <div className="flex justify-center pt-10 items-center flex-col text-center z-20 drop-shadow-sm md:drop-shadow-none">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -75,10 +75,10 @@ export const Greetings = ({
           </a>
         </motion.div>
       </div>
-      <div className="absolute top-16 left-0 z-0">
+      <div className="absolute top-16 left-0 z-0 hidden md:inline">
         <Image src={LeftBg} alt="Techs" />
       </div>
-      <div className="absolute top-16 right-0 z-0">
+      <div className="absolute top-16 right-0 z-0 hidden md:inline">
         <Image src={RightBg} alt="Techs" />
       </div>
     </main>
